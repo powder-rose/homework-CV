@@ -75,6 +75,7 @@ h1 {
     height: 65px;
     left: 975px;
     top: 500px;
+    cursor: pointer;
     background-color: #727272;
     border: none;
     text-transform: uppercase;
@@ -83,6 +84,10 @@ h1 {
     text-align: center;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+}
+
+.text-me-button:hover {
+   background-color:#554F4F;
 }
 
 .about-me {
