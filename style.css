@@ -267,7 +267,7 @@ a:hover {
 .contact-form p {
     position: relative;
     top: 150px;
-    left: 485px;
+    left: 500px;
     width: 540px;
     font-weight: 400;
     font-size: 16px;
@@ -319,7 +319,7 @@ a:hover {
 }
 
 #user-email:invalid {
-    border: 1px solid #fba798;
+    border-color: rgb(249, 203, 203);
 }
 
 
