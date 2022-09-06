@@ -202,7 +202,6 @@ a:hover {
 .working-process {
     position: relative;
     top: 500px;
-    /* height: px; */
     background-color: rgba(255, 219, 232, 1);
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -236,6 +235,10 @@ a:hover {
     margin-bottom: 80px;
     width: 750px;
     height: 450px;
+}
+
+.portfolio {
+    width: 100%;
 }
 
 .portfolio img {
@@ -345,4 +348,29 @@ a:hover {
 
 .submit-button:hover {
     background-color: #fe2599;
+}
+
+.footer {
+    position: relative;
+    top: 1700px;
+    height: 120px;
+    
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    padding-left: 150px;
+}
+
+.footer h3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #B6ABAD;
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #B6ABAD;
 }
