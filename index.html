@@ -10,7 +10,7 @@
     <title>Web Development</title>
 </head>
 
-<body>
+<body id="body">
     <header class="header">
 
         <nav>
@@ -59,7 +59,31 @@
         <h2>Как я работаю</h2>
         <p>Здесь вы можете изучить, в чем особенности моей работы, почему написать качественный код так важно и ответы
             на часто задаваемые вопросы.</p>
-        <video src="#" controls class="video-work"></video>
+        <video src="#" controls class="video-work" poster="./assets/images/code-poster.jpg"></video>
+    </section>
+    <section class="portfolio">
+        <img src="./assets/images/homepage_1.png" alt="Портфолио сайта №1">
+        <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
+        <img src="./assets/images/homepage_2.png" alt="Портфолио сайта №2">
+        <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
+        <img src="./assets/images/homepage_3.png" alt="Портфолио сайта №3">
+        <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
+    </section>
+    <section class="contact-form">
+        <h2>Хотите вебсайт?</h2>
+        <p>Заполните форму и я свяжусь с вами в ближайшее время! Здесь вы можете так же задать любой интересующий вас
+            вопрос и описать вашу задачу</p>
+        <form action="#" method="post">
+            <label for="name">
+                <input type="text" id="username" name="name" placeholder="Ваше имя">
+            </label>
+            <label for="user-email">
+                <input type="email" id="user-email" name="email" placeholder="Ваш e-mail">
+            </label>
+
+            <textarea name="message" id="user-message" placeholder="Сообщение"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
     </section>
 </body>
 
