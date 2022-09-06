@@ -283,10 +283,20 @@ a:hover {
     height: 50px;
     border: none;
     text-indent: 10px;
+    background-color: #fdfcfc;
 }
 
 #username:focus {
     outline-color: #b4b3b3;
+}
+
+#username:valid {
+    border: 1px solid #8fb885;
+    
+}
+
+#username:invalid {
+    border: 1px solid #fba798;
 }
 
 #user-email {
@@ -303,6 +313,15 @@ a:hover {
 #user-email:focus {
     outline-color: #b4b3b3;
 }
+
+#user-email:valid {
+    border: 1px solid #8fb885;
+}
+
+#user-email:invalid {
+    border: 1px solid #fba798;
+}
+
 
 #user-message {
     position: relative;
