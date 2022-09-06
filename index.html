@@ -10,7 +10,7 @@
     <title>Web Development</title>
 </head>
 
-<body id="body">
+<body>
     <header class="header">
 
         <nav>
@@ -23,68 +23,78 @@
             </ul>
         </nav>
 
-        <h1 class="block-header">Разработка веб-сайтов</h1>
+        <h1>Разработка веб-сайтов</h1>
         <img src="./assets/images/laptop.svg" alt="Изображение ноутбука" class="laptop">
-        <p class="about-page">Мечтаете о красивом сайте для своего магазина, компании, или просто для себя? Здесь вы
+        <p>Мечтаете о красивом сайте для своего магазина, компании, или просто для себя? Здесь вы
             можете получить
             именно то, что вы ищете! Интересные решения, код, который легко поддерживается и функционал, продуманный
             до мелочей.</p>
         <button type="button" class="text-me-button">Написать мне</button>
-
     </header>
 
-    <section class="about-me">
-        <h2 class="about-me-header">Обо мне</h2>
-        <p class="about-me-text">Привет! Меня зовут Катя и я занимаюсь разработкой веб-сайтов и приложений. Опыт менее
-            одного года. Знаю
-            множество фишек как сделать ваш сайт особенным, узнаваемым, и, главное — хорошо работающим!</p>
+    <article>
+        <section class="about-me">
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут Катя и я занимаюсь разработкой веб-сайтов и приложений. Опыт менее
+                одного года. Знаю
+                множество фишек как сделать ваш сайт особенным, узнаваемым, и, главное — хорошо работающим!</p>
+        </section>
 
-    </section>
-    <section class="about-projects">
+        <section class="about-projects">
+            <div class="heart">
+                <p>Сайты, сделанные с любовью</p>
+                <img src="./assets/images/heart.svg" alt="Изображение сияющего сердца">
+            </div>
 
-        <p class="p-heart">Сайты, сделанные с любовью</p>
-        <img src="./assets/images/heart.svg" alt="Изображение сияющего сердца" class="heart-img">
+            <div class="stars">
+                <p>Более 10 коммерческих проектов</p>
+                <img src="./assets/images/stars.svg" alt="Изображение звезд">
+            </div>
+        </section>
 
-        <p class="p-stars">Более 10 коммерческих проектов</p>
-        <img src="./assets/images/stars.svg" alt="Изображение звезд" class="stars-img">
+        <section class="skills">
+            <h2>Мои навыки</h2>
+            <img src="./assets/images/range.svg" alt="Шкала навыков">
+            <img class="cat-avatar" src="./assets/images/cat-avatar.svg" alt="Изображение котика">
+        </section>
 
-    </section>
+        <section class="working-process">
+            <h2>Как я работаю</h2>
+            <p>Здесь вы можете изучить, в чем особенности моей работы, почему написать качественный код так важно и
+                ответы
+                на часто задаваемые вопросы.</p>
+            <video class="video-work" src="#" controls poster="./assets/images/code-poster.jpg"></video>
+        </section>
 
-    <section class="skills">
-        <h2 class="skills-header">Мои навыки</h2>
-        <img src="./assets/images/range.svg" alt="Шкала навыков">
-        <img class="cat-avatar" src="./assets/images/cat-avatar.svg" alt="Изображение котика">
-    </section>
-    <section class="working-process">
-        <h2>Как я работаю</h2>
-        <p>Здесь вы можете изучить, в чем особенности моей работы, почему написать качественный код так важно и ответы
-            на часто задаваемые вопросы.</p>
-        <video src="#" controls class="video-work" poster="./assets/images/code-poster.jpg"></video>
-    </section>
-    <section class="portfolio">
-        <img src="./assets/images/homepage_1.png" alt="Портфолио сайта №1">
-        <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
-        <img src="./assets/images/homepage_2.png" alt="Портфолио сайта №2">
-        <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
-        <img src="./assets/images/homepage_3.png" alt="Портфолио сайта №3">
-        <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
-    </section>
-    <section class="contact-form">
-        <h2>Хотите веб-сайт?</h2>
-        <p>Заполните форму и я свяжусь с вами в ближайшее время! Здесь вы можете так же задать любой интересующий вас
-            вопрос и описать вашу задачу</p>
-        <form action="#" method="post">
-            <label for="name">
-                <input type="text" id="username" name="name" placeholder=" Ваше имя">
-            </label>
-            <label for="user-email">
-                <input type="email" id="user-email" name="email" placeholder=" Ваш e-mail">
-            </label>
+        <section class="portfolio">
+            <img src="./assets/images/homepage_1.png" alt="Портфолио сайта №1">
+            <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
+            <img src="./assets/images/homepage_2.png" alt="Портфолио сайта №2">
+            <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
+            <img src="./assets/images/homepage_3.png" alt="Портфолио сайта №3">
+            <img src="./assets/images/pink-square.png" alt="Розовый квадрат">
+        </section>
 
-            <textarea name="message" id="user-message" placeholder=" Сообщение"></textarea>
-            <button type="submit" class="submit-button">Отправить</button>
-        </form>
-    </section>
+        <section class="contact-form">
+            <h2>Хотите веб-сайт?</h2>
+            <p>Заполните форму и я свяжусь с вами в ближайшее время! Здесь вы можете так же задать любой интересующий
+                вас
+                вопрос и описать вашу задачу</p>
+
+            <form action="#" method="post">
+                <label for="name">
+                    <input type="text" id="username" name="name" placeholder=" Ваше имя">
+                </label>
+                <label for="user-email">
+                    <input type="email" id="user-email" name="email" placeholder=" Ваш e-mail">
+                </label>
+
+                <textarea name="message" id="user-message" placeholder=" Сообщение"></textarea>
+                <button type="submit" class="submit-button">Отправить</button>
+            </form>
+
+        </section>
+    </article>
 
     <footer class="footer">
         <h3>Изотова Катя</h3>
