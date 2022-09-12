@@ -1,53 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     margin: 0;
-    padding: 0;
-}
-
-
-.header {
-    height: 600px;
-    background-color: rgba(255, 219, 232, 1);
     font-family: 'Roboto', sans-serif;
 }
 
-.header h1 {
-    margin-left: 50%;
-    margin-top: 150px;
-    height: 45px; 
-    color: #554F4F;
-}
-
-.header p {
-    position: relative;
-    bottom: 200px;
-    left: 50%;
-    width: 434px;
-    height: 134px;
-    font-size: 17px;
-    line-height: 26px;
-    color: #727272;
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 219, 232, 1);  
 }
 
 .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 50%;
-    width: 611px;
-    height: 17px;
+    justify-content: flex-end;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 100px;
     list-style-type: none;
     font-size: 17px;
     line-height: 100px;
     letter-spacing: 0.1em;
-    font-weight: bold;
-    color: #554F4F;
+    font-weight: normal;
+    color: #554F4F; 
 }
 
 a {
+    margin: 40px;
     text-decoration: none;
-    color: #554F4F;
+    color: #554F4F; 
 }
 
 a:visited {
@@ -58,17 +48,42 @@ a:hover {
     color: #000;
 }
 
-.laptop {
-    position: relative;
-    left: 23%;
-    bottom: 50px;
-    height: 200px;  
+.main-information {
+
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 100px;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .main-information {
+        flex-direction: column;
+    }
+}
+
+.header-text {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.header-text h1 {
+    width: fit-content;
+    color: #554F4F;
+}
+
+.header p {
+    width: 434px;
+    margin-bottom: 20px;
+    color: #727272;
+    font-size: 17px;
+    line-height: 26px;
 }
 
 .text-me-button {
-    position: relative;
-    left: 50%;
-    bottom: 170px;
+    align-self: flex-start;
     width: 225px;
     height: 65px;
     cursor: pointer;
@@ -83,35 +98,52 @@ a:hover {
 }
 
 .text-me-button:hover {
-   background-color:#554F4F;
+    background-color:#554F4F;
+}
+
+
+.laptop {
+    height: 290px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.laptop img {
+    margin-right: 135px; 
+    width: 300px;
 }
 
 .about-me {
-    position: relative;
-    left: 30%;
-    top: 140px; 
-    width: 700px;
-    height: 168px;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 100%; */
+    margin-bottom: 150px;
+    
 }
 
 .about-me h2 {
-    margin-bottom: 15px;
+    text-align: center;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
-    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 34px;
     color: #554F4F;
 }
 
 .about-me p {
+
+    width: 616px;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
     color: #727272;
+    text-align: center;
 }
 
-.about-projects {
+/* .about-projects {
     position: relative;
     width: 100%;
     height: 250px;
@@ -378,4 +410,4 @@ a:hover {
     font-size: 13px;
     line-height: 21px;
     color: #B6ABAD;
-}
+} */
