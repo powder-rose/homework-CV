@@ -49,12 +49,10 @@ a:hover {
 }
 
 .main-information {
-
     display: flex;
     width: fit-content;
     height: fit-content;
-    margin-bottom: 100px;
-    
+    margin-bottom: 100px;   
 }
 
 @media screen and (max-width: 800px) {
@@ -71,15 +69,16 @@ a:hover {
 
 .header-text h1 {
     width: fit-content;
+    font-weight: 500;
     color: #554F4F;
 }
 
 .header p {
     width: 434px;
     margin-bottom: 20px;
-    color: #727272;
     font-size: 17px;
     line-height: 26px;
+    color: #727272;
 }
 
 .text-me-button {
@@ -87,7 +86,6 @@ a:hover {
     width: 225px;
     height: 65px;
     cursor: pointer;
-    background-color: #727272;
     border: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -95,6 +93,7 @@ a:hover {
     text-align: center;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    background-color: #727272;
 }
 
 .text-me-button:hover {
@@ -103,9 +102,9 @@ a:hover {
 
 
 .laptop {
-    height: 290px;
     display: flex;
     flex-wrap: wrap;
+    height: 290px;
 }
 
 .laptop img {
@@ -119,9 +118,7 @@ a:hover {
     align-content: center;
     justify-content: center;
     width: 100%;
-    /* height: 100%; */
     margin-bottom: 150px;
-    
 }
 
 .about-me h2 {
@@ -131,85 +128,69 @@ a:hover {
     line-height: 38px;
     margin-top: 100px;
     margin-bottom: 34px;
-    color: #554F4F;
+    color: #554F4F;  
 }
 
 .about-me p {
-
     width: 616px;
     font-size: 16px;
     line-height: 26px;
-    color: #727272;
     text-align: center;
+    color: #727272;
 }
 
-/* .about-projects {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    top: 250px;    
-    background-color: rgba(255, 219, 232, 1);
-}
-
-.about-projects p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    color: #554F4F;
-}
-
-.heart p {
-    position: relative;
-    width: 147px;
-    left: 32%;
-    top: 80px;
+ .about-projects {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 250px;
+   font-weight: 500;
+   font-size: 21px;
+   line-height: 25px;
+   color: #554F4F;
+   background-color: rgba(255, 219, 232, 1);
     
 }
 
-.heart img {
-    position: relative; 
-    left: 25%;
-    width: 78px;
-    height: 87.12px;
+ .about-projects p {
+    width: min-content;
+    margin-left: 20px;
+ }
+
+.heart {
+    display: flex;
 }
 
-.stars p {
-    position: relative;
-    width: 196.23px;
-    left: 70%;
-    bottom: 80px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    color: #554F4F;
-
+.stars {
+    display: flex; 
 }
 
 .stars img {
-    position: relative;
-    width: 80px;
-    height: 87.12px;
-    left: 63%;
-    bottom: 168px;
+    height: 100px;
+    width: 200px;
 }
 
-
 .skills {
-    position: relative;
-    width: 395px;
-    height: 397px;
-    left: 20%;
-    top: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.range {
+    width: 40vw;
+    height: fit-content;
 }
 
 .skills h2 {
-    position: absolute;
-    width: 470.01px;
-    height: 29.98px;
-    bottom: 450px;
-    font-family: 'Roboto', sans-serif;
+    align-self: flex-start;
+    width: fit-content;
+    padding-bottom: 50px;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
@@ -217,20 +198,17 @@ a:hover {
 }
 
 .cat-avatar {
-    position: relative;
-    width: 300px;
-    height: 397px;
-    left: 650px;
-    bottom: 300px;
+    margin-top: 70px;
+    width: 25vw;
 }
 
 .working-process {
-    position: relative;
-    top: 500px;
-    padding-top: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
     background-color: rgba(255, 219, 232, 1);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
 }
 
 .working-process h2 {
@@ -241,8 +219,7 @@ a:hover {
 }
 
 .working-process p {
-    margin-bottom: 30px;
-    margin-left: 32%;
+    margin-bottom: 50px;
     padding-top: 30px;
     width: 540px;
     font-weight: 400;
@@ -253,64 +230,72 @@ a:hover {
 }
 
 .video-work {
-    margin-bottom: 80px;
     width: 750px;
     height: 450px;
 }
 
+@media screen and (max-width: 800px) {
+    .video-work {
+        width: 80%;
+    }
+}
+
+
 .portfolio {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    margin-bottom: 300px;
 }
 
 .portfolio img {
-    position: relative;
-    top: 700px;
-    left: 5px;
-    margin: -4px;
-    width: 510px;
+    width: 500px;
 }
 
+
+
 .contact-form {
-    position: absolute;
-    top: 4100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 800px;
     background-color: rgba(255, 219, 232, 1);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
-    color: #727272;
-    text-align: center; 
 }
 
-.contact-form h2 {
-    position: relative;
-    top: 100px;
-    right: 5px;
-    margin-bottom: 40px;
-    font-weight: bold;
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 600px;
+    width: 600px;
+    text-align: center;
+}
+
+.form h2 {    
+    font-weight: 500;
     font-size: 32px;
     line-height: 38px;
     color: #554F4F;
+} 
 
-}
-
-.contact-form p {
-    position: relative;
-    top: 150px;
-    left: 500px;
+.form p {
+    align-self: center;
     width: 540px;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-}
+    color: #727272;
+} 
+
 
 
 #username  {
-    position: relative;
-    top: 50px;
-    left: 357px;
+    margin-right: 14px;
     width: 255px;
     height: 50px;
     border: none;
@@ -322,19 +307,8 @@ a:hover {
     outline-color: #b4b3b3;
 }
 
-#username:valid {
-    border: 1px solid #8fb885;
-    
-}
-
-#username:invalid {
-    border: 1px solid #fba798;
-}
-
 #user-email {
-    position: relative;
-    top: 50px;
-    left: 385px;
+    margin-left: 10px;
     width: 255px;
     height: 50px;
     border: none;
@@ -346,19 +320,9 @@ a:hover {
     outline-color: #b4b3b3;
 }
 
-#user-email:valid {
-    border: 1px solid #8fb885;
-}
-
-#user-email:invalid {
-    border-color: rgb(249, 203, 203);
-}
-
-
 #user-message {
-    position: relative;
-    top: 270px;
-    right: 160px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     width: 542px;
     height: 175px;
     border: none;
@@ -372,16 +336,13 @@ a:hover {
 }
 
 .submit-button {
-    position: relative;
-    top: 350px;
-    right: 528px;
     width: 190px;
     height: 55px;
     border: none;
-    background-color: #F40887;
     color: #FCFDFD;
     cursor: pointer;
     text-transform: uppercase;
+    background-color: #F40887;
 }
 
 .submit-button:hover {
@@ -389,13 +350,12 @@ a:hover {
 }
 
 .footer {
-    position: relative;
-    top: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 120px;
-    background: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 30px;
-    padding-left: 150px;
+    background: #FFFFFF;  
 }
 
 .footer h3 {
@@ -405,9 +365,13 @@ a:hover {
     color: #B6ABAD;
 }
 
+.footer img {
+    width: 30px;
+}
+
 .footer p {
     font-weight: 400;
     font-size: 13px;
     line-height: 21px;
     color: #B6ABAD;
-} */
+} 
